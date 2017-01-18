@@ -34,6 +34,7 @@ public class HSSecurityConfig extends WebSecurityConfigurerAdapter {
                 .configure(http)
                 .authorizeRequests()
                 .antMatchers("/secure/**").fullyAuthenticated();
+        //                .antMatchers(HttpMethod.GET, "/secure/**").hasAuthority("read:greeting");
 
     }
 }

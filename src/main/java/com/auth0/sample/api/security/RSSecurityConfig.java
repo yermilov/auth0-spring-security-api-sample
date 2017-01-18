@@ -32,5 +32,6 @@ public class RSSecurityConfig extends WebSecurityConfigurerAdapter {
                 .configure(http)
                 .authorizeRequests()
                 .antMatchers(HttpMethod.GET, "/secure/**").fullyAuthenticated();
+        //                .antMatchers(HttpMethod.GET, "/secure/**").hasAuthority("read:greeting");
     }
 }

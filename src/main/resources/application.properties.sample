@@ -1,0 +1,3 @@
+auth0.issuer={ISSUER}
+auth0.audience={AUDIENCE}
+auth0.algorithm=RS256
